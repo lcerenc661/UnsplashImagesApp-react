@@ -310,11 +310,12 @@ Toggle Container
   max-width: var(--max-width);
   padding: 1rem 0;
   margin: 0 auto;
+  /* border: 2px solid red; */
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
-.dark-toggle {
+.dark-toggle{
   background: transparent;
   border-color: transparent;
   width: 5rem;
@@ -323,18 +324,16 @@ Toggle Container
   place-items: center;
   cursor: pointer;
 }
-.toggle-icon {
+
+.toggle-icon{
   font-size: 1.5rem;
-  color: var(--textColor);
+  color: var(--textColor)
 }
-/* 
-========
-Search Form
-========
-*/
-.title {
+
+.title{
   color: var(--primary-500);
 }
+
 .search-form {
   width: var(--view-width);
   max-width: var(--fixed-width);
@@ -344,22 +343,21 @@ Search Form
   grid-template-columns: 1fr auto;
 }
 
-.search-input {
+.search-input{
   border-color: var(--grey-300);
   transition: var(--darkModeTransition);
   color: var(--textColor);
   border-radius: 0;
-
-  /* border-right: none; */
 }
 
-.search-form .btn {
+.search-form .btn{
   border-radius: 0;
 }
-.search-form .btn:hover {
+.search-form .btn:hover{
   background: var(--primary-300);
   color: var(--black);
 }
+
 
 /* 
 ========
@@ -367,7 +365,7 @@ Gallery
 ========
 */
 
-.image-container {
+.image-container{
   width: var(--view-width);
   max-width: var(--max-width);
   margin: 3rem auto;
@@ -375,17 +373,18 @@ Gallery
   gap: 2rem;
 }
 
-.image-container .img {
+.image-container .img{
   height: 10rem;
 }
 
-@media (min-width: 768px) {
-  .image-container {
+@media (min-width: 700px) {
+  .image-container{
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media (min-width: 992px) {
-  .image-container {
+  .image-container{
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
